@@ -160,27 +160,27 @@
   position: relative;
 }
 
-.news-letter-item:before {
+.news-letter-item .fa-map-marker-alt {
   position: absolute;
-  content: url(/img/mapping.png);
+  font-size: 16px;
   top: 50%;
   left: 15px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 2;
+  color: #f26c4f;
 }
 
 .contact-item {
   position: relative;
 }
 
-.contact-item::before {
+.contact-item .fa-clock {
   position: absolute;
-  content: url(/img/clock.png);
+  font-size: 16px;
   top: 50%;
   left: 15px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 2;
+  color: #f26c4f;
 }
 /*# sourceMappingURL=style.css.map */
