@@ -33,6 +33,22 @@
           align-items: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+i:hover, input:hover {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: 'Nexa Heavy';
   src: url("../fonts/NexaHeavy.eot");
@@ -45,6 +61,14 @@
   font-family: 'Nexa Regular';
   src: url("../fonts/NexaRegular.eot");
   src: url("../fonts/NexaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaRegular.ttf") format("woff"), url("../fonts/NexaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa Light';
+  src: url("../fonts/Nexa-Light.eot");
+  src: url("../fonts/Nexa-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Nexa-Light.woff") format("woff"), url("../fonts/Nexa-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -62,6 +86,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header_logo:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -137,7 +165,7 @@
   margin-left: 35px;
 }
 
-.fas {
+.icon-position {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -148,12 +176,14 @@
   font-size: 12px;
 }
 
-.fa-chevron-up {
+.arrow_up {
   top: 12px;
+  cursor: pointer;
 }
 
-.fa-chevron-down {
+.arrow_down {
   bottom: 18px;
+  cursor: pointer;
 }
 
 .news-letter-item {
@@ -182,5 +212,148 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #f26c4f;
+}
+
+.header-middle {
+  height: 70px;
+  background: #474747;
+}
+
+.main_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_nav ul li {
+  margin-right: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_nav ul li:not(:last-child):after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 12px;
+  background: grey;
+  right: -25px;
+  top: 33px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main_nav ul li:not(:last-child):after:last-child {
+  display: none;
+}
+
+.main_nav ul li a {
+  color: #fff;
+  font-family: 'Nexa Light';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 4px solid rgba(242, 108, 79, 0);
+  border-top: 4px solid rgba(242, 108, 79, 0);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.main_nav ul li a.active_link {
+  border-bottom: 4px solid #f26c4f;
+}
+
+.main_nav ul li a i {
+  position: static;
+}
+
+.header-middle_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map-icon {
+  color: #f26c4f;
+  margin: 0 35px;
+}
+
+.quickLinks {
+  color: #ffffff;
+  font-family: 'Nexa Light';
+  margin-right: 10px;
+}
+
+.header-link {
+  margin-right: 45px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-link:after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 27px;
+  background: grey;
+  right: -25px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header-link i {
+  color: #f26c4f;
+}
+
+.header-middle_dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-middle_dropdown_text {
+  color: #ffffff;
+  font-family: 'Nexa Light';
+}
+
+.dropdown {
+  background: transparent;
+  border-left: 1px solid transparent;
 }
 /*# sourceMappingURL=style.css.map */

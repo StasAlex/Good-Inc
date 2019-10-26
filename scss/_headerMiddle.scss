@@ -1,0 +1,95 @@
+.header-middle{
+    height: 70px;
+    background: rgb(71, 71, 71);
+}
+.main_nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.main_nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    li{
+        margin-right: 50px;
+        position: relative;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        &:not(:last-child):after{
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 12px;
+            background: grey;
+            right: -25px;
+            top: 33px;
+            transform: translate(-50%, -50%);
+            &:last-child{
+                display: none;
+            }
+        }
+        a{
+            color:#fff;
+            font-family: 'Nexa Light';
+            display: flex;
+            height: 100%;
+            align-items: center;
+            border-bottom: 4px solid rgba(242, 108, 79, 0);
+            border-top: 4px solid rgba(242, 108, 79, 0);
+            transition: all 0.2s ease-in;
+            &.active_link{
+                border-bottom: 4px solid $main-color;
+            }
+            i{
+                position: static;
+            }
+        }
+    }
+}
+.header-middle_right{
+    display: flex;
+}
+.map-icon{
+    color: $main-color ;
+    margin: 0 35px;
+}
+.quickLinks{
+    color: #ffffff;
+    font-family: 'Nexa Light';
+    margin-right: 10px;
+}
+.header-link{
+    margin-right: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:after{
+        position: absolute;
+        content: '';
+        width: 2px; 
+        height: 27px;
+        background: grey;
+        right: -25px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.header-link i{
+    color: $main-color;
+}
+
+.header-middle_dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-middle_dropdown_text{
+    color: #ffffff;
+    font-family: 'Nexa Light';
+}
+.dropdown{
+    background: transparent;
+    border-left: 1px solid transparent;
+}
