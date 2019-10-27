@@ -1,7 +1,8 @@
 $main-color: rgba(242, 108, 79, 1);
 
-
-
+body{
+    background: #ebebeb;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -35,4 +36,7 @@ i, input{
     &:hover{
         cursor: pointer;
     }
+}
+.orange{
+    color: $main-color;
 }

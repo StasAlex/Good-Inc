@@ -33,6 +33,7 @@
         a{
             color:#fff;
             font-family: 'Nexa Light';
+            font-size: 12px;
             display: flex;
             height: 100%;
             align-items: center;
@@ -59,6 +60,7 @@
     color: #ffffff;
     font-family: 'Nexa Light';
     margin-right: 10px;
+    font-size: 12px;
 }
 .header-link{
     margin-right: 45px;
@@ -88,8 +90,35 @@
 .header-middle_dropdown_text{
     color: #ffffff;
     font-family: 'Nexa Light';
+    font-size: 12px;
 }
 .dropdown{
     background: transparent;
     border-left: 1px solid transparent;
 }
+
+.Portfolio_______________Services_______________ {
+    font-size: 12px;
+    font-family: "Nexa";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 5.917;
+    position: absolute;
+    left: 384.937px;
+    top: 66.498px;
+    z-index: 420;
+  }
+  
+  .Quicklinks {
+    font-size: 12px;
+    font-family: "Nexa";
+    color: rgb(213, 213, 213);
+    font-weight: bold;
+    line-height: 5.917;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    left: 949.937px;
+    top: 135.49px;
+    z-index: 430;
+  }
+  
