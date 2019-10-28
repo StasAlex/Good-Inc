@@ -1,0 +1,118 @@
+.header__img{
+    flex:0 0 630px;
+    height: 390px;
+    background: url(../img/main-pic.png) no-repeat;
+    background-size: cover;
+    border-right:9px solid $main-color;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    &:after{
+        content: '';
+        position: absolute;
+        top: 50px;
+        right: -40px;
+        border: 15px solid transparent;
+        border-left: 15px solid #f26c4f;
+        z-index: 1;
+    }
+}
+.header__img-title_box{
+    width: 365px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.502;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.004);
+}
+.header__img-title{
+    font-size: 16px;
+    font-family: 'Nexa Regular';
+    color: rgb(255, 255, 255);
+  }
+.header__card{
+    padding: 50px 50px 0 40px;
+    background-color: #373737;
+    color: #ffffff;
+    position: relative;
+}
+.header__card-title {
+    font-size: 19px;
+    font-family: 'Nexa Regular';
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+  }
+.header__card-text {
+    font-size: 12px;
+    font-family: "ArialRegular";
+    line-height: 1.917;
+    color: rgb(167, 167, 167);
+    margin-bottom: 25px;
+}
+.blog_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plus {
+    font-size: 36px;
+    font-family: 'Nexa Regular';
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.time_article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(167, 167, 167);
+}
+.date_article {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(167, 167, 167);
+    margin-left: 10px;
+}
+.owl-nav{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    button{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        outline: none;
+        width: 33px;
+        height: 33px;
+        justify-content: center;
+        align-items: center;
+        background: #535353;
+        &:hover{
+            background: #474747;
+        }
+    }
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: #535353;
+    color: #ffffff;
+    border: none;
+    padding: 0!important;
+    &:hover{
+        background: #474747;
+    }
+}
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background: #535353;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 0;
+}
+  

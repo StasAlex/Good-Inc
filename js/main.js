@@ -8,4 +8,17 @@ $(document).ready(function(){
         $( this ).addClass('active_link');
     });
 
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        // autoplay: true,
+        smartSpeed: 1000,
+        autoplayTimeout: 3000,
+        nav: true,
+        dots: false,
+        autoplayHoverPause: true
+      });
+    
+
+
   });

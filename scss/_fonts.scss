@@ -25,3 +25,35 @@
     font-weight: normal;
     font-style: normal;
 }
+/* font-family: "ArialRegular"; */
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/ArialRegular.eot");
+    src: url("../fonts/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialRegular.woff") format("woff"),
+    url("../fonts/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialBold"; */
+@font-face {
+    font-family: "ArialBold";
+    src: url("../fonts/ArialBold.eot");
+    src: url("../fonts/ArialBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialBold.woff") format("woff"),
+    url("../fonts/ArialBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "ArialBlack"; */
+@font-face {
+    font-family: "ArialBlack";
+    src: url("../fonts/ArialBlack.eot");
+    src: url("../fonts/ArialBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialBlack.woff") format("woff"),
+    url("../fonts/ArialBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
