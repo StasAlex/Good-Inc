@@ -8,10 +8,10 @@ $(document).ready(function(){
         $( this ).addClass('active_link');
     });
 
-    $(".owl-carousel").owlCarousel({
+    $(".main_slider").owlCarousel({
         items: 1,
         loop: true,
-        // autoplay: true,
+        autoplay: true,
         smartSpeed: 1000,
         autoplayTimeout: 3000,
         nav: true,
