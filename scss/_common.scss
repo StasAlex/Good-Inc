@@ -20,6 +20,9 @@ body{
 .space-between{
     justify-content: space-between;
 }
+.content-center{
+    justify-content: center;
+}
 .align-items-center{
     align-items: center;
 }
@@ -37,6 +40,6 @@ i, input{
         cursor: pointer;
     }
 }
-.orange{
-    color: $main-color;
+.relative{
+    position: relative;
 }

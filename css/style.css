@@ -31,6 +31,12 @@ body {
           justify-content: space-between;
 }
 
+.content-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .align-items-center {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -53,8 +59,8 @@ i:hover, input:hover {
   cursor: pointer;
 }
 
-.orange {
-  color: #f26c4f;
+.relative {
+  position: relative;
 }
 
 @font-face {
@@ -546,6 +552,10 @@ i:hover, input:hover {
   cursor: pointer;
 }
 
+.main_feature {
+  margin-bottom: 15px;
+}
+
 .header__img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 630px;
@@ -661,56 +671,97 @@ i:hover, input:hover {
   margin-left: 10px;
 }
 
-.owl-nav {
+.main_slider-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: 1;
 }
 
-.owl-nav button {
-  margin: 0;
-  padding: 0;
+.main_slider-prev, .main_slider-next {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  outline: none;
-  width: 33px;
-  height: 33px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #535353;
-}
-
-.owl-nav button:hover {
-  background: #474747;
-}
-
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-  background: #535353;
+  height: 33px;
+  width: 33px;
   color: #ffffff;
-  border: none;
-  padding: 0 !important;
+  background: #535353;
+  -webkit-transition: background .3s ease-in;
+  transition: background .3s ease-in;
 }
 
-.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel button.owl-dot:hover {
+.main_slider-prev:hover, .main_slider-next:hover {
   background: #474747;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
-  color: #FFF;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  background: #535353;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 0;
+.article_slider_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider_card {
+  width: 300px;
+  height: 380px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(211, 211, 211, 0.004);
+          box-shadow: 0px 1px 0px 0px rgba(211, 211, 211, 0.004);
+}
+
+.card_img {
+  width: 100%;
+  height: 190px;
+}
+
+.slider_card_title {
+  font-size: 25px;
+  font-family: 'Nexa Regular';
+  color: #4f4f4f;
+  line-height: 1.24;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.slider_card_text {
+  font-size: 12px;
+  font-family: "ArialRegular";
+  color: #646464;
+  line-height: 2;
+  padding: 0 25px 25px 25px;
+}
+
+.articles_slider-prev {
+  position: absolute;
+  top: -300px;
+  left: -35px;
+  z-index: 1;
+  color: #adadad;
+  font-size: 35px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.articles_slider-next {
+  position: absolute;
+  top: -300px;
+  right: -35px;
+  z-index: 1;
+  color: #adadad;
+  font-size: 35px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
 /*# sourceMappingURL=style.css.map */
